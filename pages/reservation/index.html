@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="../../src/css/style.css">
+    <style>
+        .head {
+            background-image: url("../../src/images/background/restaurant2.webp");
+        }
+    </style>
+</head>
+<body style="background: #1e1e1e">
+
+<header>
+    <section style="height: 30vh; padding-bottom: 40px" class="head">
+        <div class="container">
+            <p class="subtitle subtitle-white">Luxury Hotel</p>
+            <h2 class="head__title">Reservation</h2>
+        </div>
+    </section>
+</header>
+<main style="margin-right: auto; position: relative">
+    <section class="reservation">
+        <div class="container" style="padding: 0 30px">
+            <div class="profile__message">
+                <h5 class="restaurant__title">Reservation Details</h5>
+                <form action="" class="profile__form">
+                    <div class="profile__field">
+                        <label class="profile__label">
+                            <input style="padding: 15px 0;" placeholder="Full Name *" type="text" class="profile__input" required>
+                        </label>
+                        <label class="profile__label">
+                            <input style="padding: 15px 0;" placeholder="Email Address *" type="text" class="profile__input" required>
+                        </label>
+                    </div>
+                    <div class="profile__field">
+                        <label class="profile__label">
+                            <textarea class="profile__input profile__area" name="" placeholder="Your Comment *" required></textarea>
+                        </label>
+                        <label class="profile__label">
+                            <input id="phone" class="profile__input" type="tel" name="phone" placeholder="Phone Number *" style="padding: 15px 0;" required>
+                        </label>
+                    </div>
+                    <button class="btn-brown btn-brown_small">Send Comment</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <aside class="reservation__info">
+        <h4 class="reservation__title">Your stay</h4>
+        <div class="reservation__info-text">
+            <div class="reservation__date">
+                <span class="reservation__text">Check-In</span>
+                <p class="">After 14:00</p>
+            </div>
+            <div class="reservation__date">
+                <span class="reservation__text">Check-Out</span>
+                <p class="">Before 12:00</p>
+            </div>
+        </div>
+        <p class="reservation__info-date">
+            <span>вс, 11 дек. 2022 г.</span> - <span>вс, 11 дек. 2022 г.</span>
+        </p>
+        <p class="reservation__info-date">1 person</p>
+        <div class="reservation__info-room">
+            <p class="reservation__text">Junior Suite</p>
+            <p>170.00 $</p>
+        </div>
+        <p class="reservation__text">Total: <span class="reservation__info-price">170.00 $</span></p>
+    </aside>
+</main>
+
+<script src="../../src/js/inputmask.js"></script>
+<script src="../../src/js/reservation.js"></script>
+</body>
+</html>
